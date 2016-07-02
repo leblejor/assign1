@@ -4,6 +4,8 @@
 #include <time.h>
 #include <insertionSort.h>
 //add new header files for sort1 and sort2<-----
+#include "sort1.h"
+#include "sort2.h"
 
 #define VECTORSIZE 100000
 

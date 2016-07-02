@@ -3,12 +3,12 @@ CC=gcc
 #linker
 LD=gcc
 #include file directory
-CFLAGS=-I.
+CFLAGS= -std=c99 -I.
 
 #linker rule
-testSort: main.o insertionSort.o
+testSort: main.o insertionSort.o sort1.o sort2.o
 #	gcc -o testSort main.o insertionSort.o
-	$(LD) -o testSort main.o insertSort.o
+	$(LD) -o testSort main.o insertionSort.o sort1.o sort2.o
 	
 #compiler rules
 main.o: main.c
